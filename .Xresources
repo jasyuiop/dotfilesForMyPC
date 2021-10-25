@@ -1,0 +1,93 @@
+! xft
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.autohint: true
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcdfilter
+!Xft.rgba: rgb
+
+! Font
+!URxvt*font:                 xft:Iosevka :regular:size=18
+!URxvt*imFont:               xft:Iosevka :italic:size=18
+!URxvt*boldFont:             xft:Iosevka :bold:size=18
+!URxvt*italicFont:           xft:Iosevka :italic:size=18
+!URxvt*boldItalicFont:       xft:Iosevka :bold italic:size=18
+URxvt.font: xft:MesloLGS NF:size=16
+
+! Disable scroll bar 
+URxvt*scrollBar: false
+
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: yes
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+
+! Font spacing
+URxvt.letterSpace: 0
+
+! Scrollback
+URxvt.saveLines: 2000
+
+! Scrollback buffer in secondary screen (example disable vim output)
+URxvt.secondaryScreen: 1
+URxvt.secondaryScroll: 0
+
+! Keybind
+!URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+!URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+!URxvt.keysym.Control-Meta-c: builtin-string:
+!URxvt.keysym.Control-Meta-v: builtin-string:
+
+! Cursor 
+URxvt.cursorBlink: true
+URxvt.cursorColor: #657b83
+
+! Pointer
+URxvt.pointerBlank: true
+
+! Url click
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.matcher.button: 1
+
+! -----------------------------------------------------------------------------
+! File: gruvbox-dark.xresources
+! Description: Retro groove colorscheme generalized
+! Author: morhetz <morhetz@gmail.com>
+! Source: https://github.com/morhetz/gruvbox-generalized
+! Last Modified: 6 Sep 2014
+! -----------------------------------------------------------------------------
+
+! hard contrast: *background: #1d2021
+URxvt.background: #282828
+! soft contrast: *background: #32302f
+URxvt.foreground: #ebdbb2
+! Black + DarkGrey
+URxvt.color0:  #282828
+URxvt.color8:  #928374
+! DarkRed + Red
+URxvt.color1:  #cc241d
+URxvt.color9:  #fb4934
+! DarkGreen + Green
+URxvt.color2:  #98971a
+URxvt.color10: #b8bb26
+! DarkYellow + Yellow
+URxvt.color3:  #d79921
+URxvt.color11: #fabd2f
+! DarkBlue + Blue
+URxvt.color4:  #458588
+URxvt.color12: #83a598
+! DarkMagenta + Magenta
+URxvt.color5:  #b16286
+URxvt.color13: #d3869b
+! DarkCyan + Cyan
+URxvt.color6:  #689d6a
+URxvt.color14: #8ec07c
+! LightGrey + White
+URxvt.color7:  #a89984
+URxvt.color15: #ebdbb2
