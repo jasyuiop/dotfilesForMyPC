@@ -108,6 +108,9 @@ export TERM=xterm-256color
 alias mySession='tmux new-session -d -s "My"'
 alias workSession='tmux new-session -d -s "Work"'
 
+alias torrents='cd /media/HDD1/Torrents'
+alias hdd1='cd /media/HDD1/'
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"

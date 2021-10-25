@@ -42,6 +42,9 @@ exec --no-startup-id picom --config ~/.config/picom/picom.conf --experimental-ba
 # Barrier
 #exec --no-startup-id barrier
 
+# key stroke speed
+exec --no-startup-id xset r rate 300 30
+
 # Run feh for wallpaper
 exec --no-startup-id ~/.fehbg
 
@@ -212,4 +215,13 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+        height 25
 }
+
+# i3-gaps
+for_window [class=".*"] border pixel 0
+gaps inner 8
+gaps outer 3
+smart_borders on
+smart_gaps on
+hide_edge_borders smart_no_gaps
