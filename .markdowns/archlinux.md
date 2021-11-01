@@ -1,0 +1,1 @@
+/home/jasyuiop/Markdowns/My Notes/Arch Linux Kurulum.md
