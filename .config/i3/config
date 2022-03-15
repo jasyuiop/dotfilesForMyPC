@@ -49,15 +49,10 @@ exec --no-startup-id picom --config ~/.config/picom/picom.conf --experimental-ba
 #exec --no-startup-id barrier
 
 # Steam
-exec --no-startup-id steam -silent
+#exec --no-startup-id steam -silent
 
 # key stroke speed
 exec --no-startup-id xset r rate 300 30
-
-# dont sleep
-exec --no-startup-id xset s off
-exec --no-startup-id xset -dpms
-exec --no-startup-id xset s noblank
 
 # Run feh for wallpaper
 exec --no-startup-id ~/.fehbg
