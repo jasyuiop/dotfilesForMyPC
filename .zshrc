@@ -20,6 +20,8 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 export EDITOR='vim'
 export TERM=xterm-256color
+export PATH="$PATH:$HOME/go/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 # Tmux Sessions
 alias mySession='tmux new-session -d -s "My Session"'
@@ -29,6 +31,9 @@ alias sourcetmux='tmux source ~/.tmux.conf'
 # Disk aliases
 alias torrents='cd /media/HDD1/Torrents'
 alias hdd1='cd /media/HDD1/'
+
+# Upgrade,Clean....
+alias uoc='~/updateAndClean.sh'
 
 # git config
 alias dotfiles='/usr/bin/git --git-dir=/home/jasyuiop/.cfg/ --work-tree=/home/jasyuiop'
