@@ -36,20 +36,11 @@ exec --no-startup-id blueman-applet
 # tray applet pulseaudio
 exec --no-startup-id pasystray
 
-# Crow Translate
-exec --no-startup-id crow
-
 # Numlockx
 exec --no-startup-id numlockx 
 
 # Picom
 exec --no-startup-id picom --config ~/.config/picom/picom.conf --experimental-backends
-
-# Barrier
-#exec --no-startup-id barrier
-
-# Steam
-#exec --no-startup-id steam -silent
 
 # key stroke speed
 exec --no-startup-id xset r rate 300 30
@@ -151,16 +142,43 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
+set $ws1 "1:Web"
+set $ws2 "2:Terminal"
+set $ws3 "3:Coding"
+set $ws4 "4:Notes"
+set $ws5 "5:Social"
+set $ws6 "6:Files"
+set $ws7 "7:Editing"
+set $ws8 "8:Filesystem Utility"
 set $ws9 "9"
 set $ws10 "10"
+
+# Automatically putting clients on specific workspaces
+    # Web
+assign [class="firefox|Authy Desktop"] → number "1:Web"
+    # Terminal
+assign [class="URxvt"] → number "2:Terminal"
+    # Coding
+assign [class="Code"] → number "3:Coding"
+    # Notes
+assign [class="obsidian|libreoffice"] → number "4:Notes"
+    # Social
+assign [class="discord|TelegramDesktop"] → number "5:Social"
+    # Files
+assign [class="qBittorrent|Thunar|vlc"] → number "6:Files"
+    # Editing
+assign [class="Gimp|kdenlive|Ghb"] → number "7:Editing"
+    # Filesystem Utility
+assign [class="Veracrypt|Snapper-gui"] → number "8:Filesystem Utility"
+
+# Automatically starting applications on i3 startup
+exec --no-startup-id firefox
+exec --no-startup-id urxvt -e tmux new-session -A -s "My Session"
+exec --no-startup-id Code
+exec --no-startup-id obsidian
+exec --no-startup-id crow
+#exec --no-startup-id barrier
+#exec --no-startup-id steam -silent
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
