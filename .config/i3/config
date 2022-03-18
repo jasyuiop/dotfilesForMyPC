@@ -26,6 +26,9 @@ font pango:Iosevka Bold 10
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
+# Polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
@@ -240,10 +243,10 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3status
-        height 25
-}
+#bar {
+#        status_command i3status
+#        height 25
+#}
 
 # i3-gaps
 for_window [class=".*"] border pixel 0
