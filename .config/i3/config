@@ -174,7 +174,7 @@ assign [class="Veracrypt|Snapper-gui"] → number "8:Filesystem Utility"
 # Automatically starting applications on i3 startup
 exec --no-startup-id firefox
 exec --no-startup-id urxvt -e tmux new-session -A -s "My Session"
-exec --no-startup-id Code
+exec --no-startup-id code
 exec --no-startup-id obsidian
 exec --no-startup-id crow
 #exec --no-startup-id barrier

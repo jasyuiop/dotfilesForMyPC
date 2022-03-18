@@ -1,6 +1,9 @@
 #!/bin/env zsh
 set -uo pipefail
 
+printf "Running reflector for best mirrors"
+sudo reflector -p https -c Germany -a 12 -l 10 --sort rate --save /etc/pacman.d/mirrorlist
+
 printf "Running keyring update"
 sudo pacman -Sy archlinux-keyring
 
