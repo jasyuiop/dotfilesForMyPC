@@ -27,7 +27,7 @@ font pango:Iosevka Bold 10
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # Polybar
-exec --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -86,7 +86,7 @@ bindsym $mod+Print exec flameshot gui -p ~/Pictures/screenshots
 bindsym Shift+Print exec flameshot full -p ~/Pictures/screenshots
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id rofi -show drun -theme gruvbox-dark.rasi -font "Iosevka 14"
+bindsym $mod+d exec --no-startup-id rofi -show drun -theme dracula.rasi -font "Iosevka 14"
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
