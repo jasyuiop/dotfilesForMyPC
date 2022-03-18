@@ -1,6 +1,9 @@
 #!/bin/env zsh
 set -uo pipefail
 
+printf "Running keyring update"
+sudo pacman -Sy archlinux-keyring
+
 printf "Running pacman update...\n"
 sudo pacman -Syu;
 

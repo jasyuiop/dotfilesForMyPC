@@ -167,7 +167,7 @@ assign [class="discord|TelegramDesktop"] → number "5:Social"
     # Files
 assign [class="qBittorrent|Thunar|vlc"] → number "6:Files"
     # Editing
-assign [class="Gimp|kdenlive|Ghb"] → number "7:Editing"
+assign [class="Gimp|kdenlive|Ghb|krita"] → number "7:Editing"
     # Filesystem Utility
 assign [class="Veracrypt|Snapper-gui"] → number "8:Filesystem Utility"
 
