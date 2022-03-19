@@ -1,14 +1,5 @@
-/*
- * ROFI color theme
- *
- * Based on Something Found in the Internet
- *
- * User: Contributors
- * Copyright: *!
- */
-
 configuration {
-  font: "JetBrainsMono Nerd Font Medium 10";
+  font: "Iosevka Medium 14";
 
   drun {
     display-name: "";
@@ -34,10 +25,10 @@ configuration {
   padding: 0;
   spacing: 0;
 
-  bg: #282a36;
-  fg: #f8f8f2;
-  blue: #6272a4;
-  purple: #bd93f9;
+  bg: #191919;
+  fg: #ffffff;
+  blue: #2D4263;
+  orange: #C84B31;
 
   background-color: @bg;
   text-color: @fg;
@@ -85,6 +76,6 @@ element-text {
 }
 
 element-text selected {
-  text-color: @purple;
+  text-color: @orange;
 }
 

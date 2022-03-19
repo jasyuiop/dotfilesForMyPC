@@ -86,7 +86,7 @@ bindsym $mod+Print exec flameshot gui -p ~/Pictures/screenshots
 bindsym Shift+Print exec flameshot full -p ~/Pictures/screenshots
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id rofi -show drun -theme dracula.rasi -font "Iosevka 14"
+bindsym $mod+d exec --no-startup-id rofi -show drun -theme my.rasi
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
