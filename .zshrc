@@ -31,6 +31,7 @@ alias sourcetmux='tmux source ~/.tmux.conf'
 # Disk aliases
 alias torrents='cd /media/HDD1/Torrents'
 alias hdd1='cd /media/HDD1/'
+alias enc01='cd /media/VeraCrypt/EncryptedVolume01'
 
 # Upgrade,Clean....
 alias uoc='~/updateAndClean.sh'

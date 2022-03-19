@@ -173,6 +173,8 @@ assign [class="qBittorrent|Thunar|vlc"] → number "6:Files"
 assign [class="Gimp|kdenlive|Ghb|krita"] → number "7:Editing"
     # Filesystem Utility
 assign [class="Veracrypt|Snapper-gui"] → number "8:Filesystem Utility"
+    # Others
+assign [class="java-lang-Thread"] → number "9:Tachidesk"
 
 # Automatically starting applications on i3 startup
 exec --no-startup-id firefox
