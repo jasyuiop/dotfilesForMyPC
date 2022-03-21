@@ -145,34 +145,34 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1:Web"
-set $ws2 "2:Terminal"
-set $ws3 "3:Coding"
-set $ws4 "4:Notes"
-set $ws5 "5:Social"
-set $ws6 "6:Files"
-set $ws7 "7:Editing"
-set $ws8 "8:Filesystem Utility"
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
 # Automatically putting clients on specific workspaces
     # Web
-assign [class="firefox|Authy Desktop"] → number "1:Web"
+assign [class="firefox|Authy Desktop"] → 1
     # Terminal
-assign [class="URxvt"] → number "2:Terminal"
+assign [class="URxvt"] → 2
     # Coding
-assign [class="Code"] → number "3:Coding"
+assign [class="Code"] → 3
     # Notes
-assign [class="obsidian|libreoffice"] → number "4:Notes"
+assign [class="obsidian|libreoffice"] → 4
     # Social
-assign [class="discord|TelegramDesktop"] → number "5:Social"
+assign [class="discord|TelegramDesktop"] → 5
     # Files
-assign [class="qBittorrent|Thunar|vlc"] → number "6:Files"
+assign [class="qBittorrent|Thunar|vlc"] → 6
     # Editing
-assign [class="Gimp|kdenlive|Ghb|krita"] → number "7:Editing"
+assign [class="Gimp|kdenlive|Ghb|krita"] → 7
     # Filesystem Utility
-assign [class="Veracrypt|Snapper-gui"] → number "8:Filesystem Utility"
+assign [class="Veracrypt|Snapper-gui"] → 8
 
 # Automatically starting applications on i3 startup
 exec --no-startup-id firefox
