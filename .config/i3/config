@@ -249,7 +249,7 @@ bindsym $mod+r mode "resize"
 #}
 
 # Center/vertical firefox vs..
-bindsym $mod+m fullscreen disable; floating enable; resize set 1024 1080; move window to position 448 0
+bindsym $mod+m fullscreen disable; floating enable; resize set 1024 1035; move window to position 448 35
 bindsym $mod+Shift+m fullscreen disable; floating disable; sticky disable
 
 # i3-gaps
