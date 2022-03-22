@@ -40,7 +40,8 @@ alias uoc='~/updateAndClean.sh'
 alias dotfiles='/usr/bin/git --git-dir=/home/jasyuiop/.cfg/ --work-tree=/home/jasyuiop'
 
 # feh alias
-alias fehSlideshow='feh --hide-pointer -qrZFD 2.0 .'
+alias fehSlideshow2sec='feh --hide-pointer -qrZFD 2.0 .'
+alias fehSlideshow='feh --hide-pointer -qrZF .'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
