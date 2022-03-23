@@ -1,14 +1,14 @@
 #!/bin/env zsh
 set -uo pipefail
 
-printf "Running reflector for best mirrors"
+printf "Running reflector for best mirrors\n"
 sudo reflector -p https -c Germany -a 12 -l 10 --sort rate --save /etc/pacman.d/mirrorlist
 
-printf "Running keyring update"
+printf "Running keyring update\n"
 sudo pacman -Sy archlinux-keyring
 
 printf "Running pacman update...\n"
-sudo pacman -Syu;
+sudo paru -Syu;
 
 printf "Removing orphans...\\n"
 sudo pacman -Rns $(pacman -Qtdq)
@@ -23,6 +23,6 @@ printf "Cleaning journal..\n"
 printf "Before journal\n"
 journalctl --disk-usage
 printf "Cleaning\n”"
-journalctl --vacuum-time=7d
+sudo journalctl --vacuum-time=7d
 printf "After journal\n"
 journalctl --disk-usage
