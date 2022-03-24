@@ -46,5 +46,10 @@ alias dotfiles='/usr/bin/git --git-dir=/home/jasyuiop/.cfg/ --work-tree=/home/ja
 alias fehSlideshow2sec='feh --hide-pointer -qrZFD 2.0 .'
 alias fehSlideshow='feh --hide-pointer -qrZF .'
 
+# warp-cli
+alias wclis='warp-cli warp-stats'
+alias wclic='warp-cli connect'
+alias wclid='warp-cli disconnect'
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
