@@ -170,9 +170,12 @@ assign [class="discord|TelegramDesktop"] → 5
     # Files
 assign [class="qBittorrent|Thunar|vlc"] → 6
     # Editing
-assign [class="Gimp|kdenlive|Ghb|krita"] → 7
+assign [class="Gimp|kdenlive|Ghb|krita|Aseprite"] → 7
     # Filesystem Utility
 assign [class="Veracrypt|Snapper-gui"] → 8
+    # Steam and games
+assign [class="Steam"] → 9
+
 
 # Automatically starting applications on i3 startup
 exec --no-startup-id firefox
