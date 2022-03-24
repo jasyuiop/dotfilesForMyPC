@@ -181,7 +181,7 @@ exec --no-startup-id code
 exec --no-startup-id obsidian
 exec --no-startup-id crow
 exec --no-startup-id barrier
-exec --no-startup-id steam -silent
+#exec --no-startup-id steam -silent
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
