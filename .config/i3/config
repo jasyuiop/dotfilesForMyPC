@@ -128,7 +128,7 @@ bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
-bindsym $mod+Control+w layout tabbed
+bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
@@ -159,23 +159,20 @@ set $ws10 "10"
 # Automatically putting clients on specific workspaces
     # Web
 assign [class="firefox|Authy Desktop"] → 1
-    # Terminal
-assign [class="URxvt"] → 2
-    # Coding
-assign [class="Code"] → 3
+    # Terminal, Coding
+assign [class="URxvt|Code"] → 2
     # Notes
-assign [class="obsidian|libreoffice"] → 4
+assign [class="obsidian|libreoffice"] → 3
     # Social
-assign [class="discord|TelegramDesktop"] → 5
+assign [class="discord|TelegramDesktop"] → 4
     # Files
-assign [class="qBittorrent|Thunar|vlc"] → 6
+assign [class="qBittorrent|Thunar|vlc"] → 5
     # Editing
-assign [class="Gimp|kdenlive|Ghb|krita|Aseprite"] → 7
+assign [class="Gimp|kdenlive|Ghb|krita|Aseprite"] → 6
     # Filesystem Utility
-assign [class="Veracrypt|Snapper-gui"] → 8
+assign [class="Veracrypt|Snapper-gui"] → 7
     # Steam and games
-assign [class="Steam"] → 9
-
+assign [class="Steam"] → 8
 
 # Automatically starting applications on i3 startup
 exec --no-startup-id firefox
