@@ -24,7 +24,7 @@ export PATH="$PATH:$HOME/go/bin"
 export PATH="$PATH:$HOME/.local/bin"
 
 # Keychain
-eval $(keychain --eval --quiet id_ed25519 ~/.ssh/id_ed25519)
+eval $(keychain --eval --quiet --noask id_ed25519 ~/.ssh/id_ed25519)
 
 # Tmux Sessions
 alias mySession='tmux new-session -d -s "My Session"'
