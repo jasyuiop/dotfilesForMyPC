@@ -8,7 +8,7 @@ printf "Running keyring update\n"
 sudo pacman -Sy archlinux-keyring
 
 printf "Running pacman update...\n"
-sudo paru -Syu;
+paru -Syu;
 
 printf "Removing orphans...\\n"
 sudo pacman -Rns $(pacman -Qtdq)
