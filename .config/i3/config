@@ -175,12 +175,13 @@ assign [class="Gimp|kdenlive|Ghb|krita|Aseprite"] → 4
 assign [class="discord|TelegramDesktop"] → 5
     # Steam and games
 assign [class="Steam"] → 6
-    # Filesystem Utility
-assign [class="Veracrypt|Snapper-gui"] → 7
+    # System Utility
+assign [class="Veracrypt|Snapper-gui|corectrl"] → 7
 
 # Automatically starting applications on i3 startup
 exec --no-startup-id firefox
 exec --no-startup-id urxvt -e tmux new-session -A -s "My Session"
+exec --no-startup-id corectrl
 exec --no-startup-id crow
 exec --no-startup-id barrier
 #exec --no-startup-id code
