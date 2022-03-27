@@ -65,6 +65,7 @@ alias others='cd ~/JASPC/Others'
 alias pictures='cd ~/JASPC/Pictures'
 alias videos='cd ~/JASPC/Videos'
 alias music='cd ~/JASPC/Music'
+alias jaspc='cd ~/JASPC'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
