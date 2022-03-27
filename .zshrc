@@ -20,6 +20,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 export EDITOR='vim'
 export TERM=xterm-256color
+export GOPATH="$HOME/go"
 export PATH="$PATH:$HOME/go/bin"
 export PATH="$PATH:$HOME/.local/bin"
 
@@ -51,5 +52,13 @@ alias wclis='warp-cli warp-stats'
 alias wclic='warp-cli connect'
 alias wclid='warp-cli disconnect'
 
+# Conf alias
+alias polybarconf="vim ~/.config/polybar/config.ini"
+alias i3conf="vim ~/.config/i3/config"
+alias picomconf="vim ~/.config/picom/picom.conf"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Go my true dir
+cd /home/jasyuiop/JASPC
