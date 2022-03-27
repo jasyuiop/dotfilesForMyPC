@@ -29,7 +29,6 @@ eval $(keychain --eval --quiet --noask id_ed25519 ~/.ssh/id_ed25519)
 
 # Tmux Sessions
 alias mySession='tmux new-session -d -s "My Session"'
-alias workSession='tmux new-session -d -s "Work Session"'
 alias sourcetmux='tmux source ~/.tmux.conf'
 
 # Disk aliases
@@ -53,12 +52,19 @@ alias wclic='warp-cli connect'
 alias wclid='warp-cli disconnect'
 
 # Conf alias
-alias polybarconf="vim ~/.config/polybar/config.ini"
-alias i3conf="vim ~/.config/i3/config"
-alias picomconf="vim ~/.config/picom/picom.conf"
+alias polybarconf='vim ~/.config/polybar/config.ini'
+alias i3conf='vim ~/.config/i3/config'
+alias picomconf='vim ~/.config/picom/picom.conf'
+
+# Dir alias
+alias workspace='cd ~/JASPC/Workspace'
+alias downloads='cd ~/JASPC/Downloads'
+alias documents='cd ~/JASPC/Documents'
+alias markdowns='cd ~/JASPC/Markdowns'
+alias others='cd ~/JASPC/Others'
+alias pictures='cd ~/JASPC/Pictures'
+alias videos='cd ~/JASPC/Videos'
+alias music='cd ~/JASPC/Music'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# Go my true dir
-cd /home/jasyuiop/JASPC
