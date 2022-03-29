@@ -27,6 +27,9 @@ export PATH="$PATH:$HOME/.local/bin"
 # Keychain
 eval $(keychain --eval --quiet --noask id_ed25519 ~/.ssh/id_ed25519)
 
+# The fuck
+eval $(thefuck --alias)
+
 # Tmux Sessions
 alias mySession='tmux new-session -d -s "My Session"'
 alias sourcetmux='tmux source ~/.tmux.conf'

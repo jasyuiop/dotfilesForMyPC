@@ -170,7 +170,7 @@ assign [class="URxvt|Code|obsidian"] → 2
     # Files
 assign [class="qBittorrent|Thunar|vlc|libreoffice"] → 3
     # Editing etc...
-assign [class="Gimp|kdenlive|Ghb|krita|Aseprite"] → 4
+assign [class="Gimp|kdenlive|Ghb|Aseprite"] → 4
     # Social
 assign [class="discord|TelegramDesktop"] → 5
     # Steam and games
